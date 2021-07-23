@@ -5,7 +5,7 @@ const DayList = (props) => {
     
     const [dailyData, setDailyData] = useState([]);
     
-    useEffect(() => setData(), []) 
+    useEffect(() => setData()) 
 
     const setData = () => {
         setDailyData(
