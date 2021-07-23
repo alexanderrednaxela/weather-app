@@ -1,0 +1,220 @@
+html, body { 
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #404040;
+}
+
+html {
+    background: #0088FD;
+}
+
+body {
+    background: #ffffff;
+    /* background: rgb(255,238,123);
+    background: linear-gradient(180deg, rgba(255,238,123,1) 35%, rgba(255,250,198,1) 100%); */
+}
+
+.mainWrapper {
+    width: 80%;
+    margin: auto;
+    display: flow-root;
+}
+
+ul.navBar {
+    display: flex;
+    list-style: none;
+    margin: 24px 0px;
+    padding: 0;
+}
+
+li {
+    margin-right: 16px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: dimgray;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: #ff8100;
+}
+
+form {
+    margin: 16px 0px 16px 0px;
+    float: left;
+    width: 100%;
+}
+
+.searchField {
+    background: transparent;;
+    border: none;
+    padding: 0px 0px 12px 0px;
+    margin-right: 16px;
+    height: 48px;
+    width: 256px;
+    border-bottom: 1px solid #0088FD;
+    font-family: 'Rakkas', cursive;
+    font-size: 48px;
+    color: #0088FD;
+}
+
+.searchField::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #0088FD;
+}
+
+.searchField:focus {
+    outline: 0;
+}
+
+.searchButton {
+    border: 1px solid #0088FD;
+    padding: 12px;
+    height: 60px;
+    width: 120px;
+    border-radius: 6px;
+    background: transparent;
+    font-size: 20px;
+    color: #0088FD;
+    transition: 0.3s;
+}
+
+.searchButton:focus {
+    outline: 0;
+}
+
+.searchButton:hover {
+    background: #ff8100;
+    border: #ff8100;
+    color: #ffffff;
+    cursor: pointer
+    ;
+}
+
+.contentWrapper {
+    width: 100%;
+    margin: auto;
+    display: flow-root;
+}
+
+h1.title {
+    font-family: 'Rakkas', cursive;
+    font-size: 112px;
+    line-height: 109px;
+    font-weight: 200;
+    margin: 48px 0px;
+    float: left;
+    width: 100%;
+}
+
+.title span {
+    background: -webkit-linear-gradient(#bfe2ff, #0088FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Rakkas', cursive;
+}
+
+.currentWeather {
+    margin: 0px 0px 32px 0px;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weatherInfo {
+    font-size: 20px;
+    margin: 16px 24px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+
+.weatherInfo span {
+    font-weight: 700;
+    color: #0088FD;
+    font-size: 56px;
+    margin-top: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.weatherInfo span h4 {
+    font-weight: 700;
+    color: #0088FD;
+    font-size: 32px;
+    margin: 0;
+}
+
+.dayListContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.dayListContainer h2 {
+    font-weight: 700;
+    margin: 32px 0px 24px 0px;
+}
+
+.dayContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.dayCard {
+    width: 320px;
+    border: solid 1px #0088FD;
+    padding: 16px;
+    margin: 0px 24px 24px 0px;
+    box-sizing: border-box;
+}
+
+time.date {
+    font-size: 20px;
+    color: #0088FD;
+    margin: 0px 0px 16px 0px;
+    display: block;
+}
+
+.dayCardInfo {
+    margin: 0px 0px 8px 0px;
+    font-size: 16px;
+}
+
+.dayCardInfo span {
+    font-weight: 700;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    padding: 32px 0px 32px 0px;
+}
+
+.footer .footerInfo {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer .footerInfo a {
+    color: dimgray;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer .footerInfo a:hover {
+    color: #ff8100;
+}
