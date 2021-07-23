@@ -39,10 +39,4 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }
-  {
-  "name": "my-package",
-  "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest"
-  }
 }
